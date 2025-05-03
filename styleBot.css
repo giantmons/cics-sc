@@ -1,0 +1,99 @@
+/* Chatbot container */
+#chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Chat window container (initially hidden) */
+#chatbot-container {
+  display: none;
+  width: 300px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+/* Chat window header with toggle functionality */
+#chatbot-header {
+  background-color: #030450;
+  border: solid #fff;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Toggle button style */
+#toggle-chatbot {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Chat messages container */
+#chatbot-messages {
+  font-size: 1.5rem;
+  padding: 10px;
+  min-height: 200px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* User input field */
+#user-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+/* Send button */
+#send-button {
+  background-color: #03045e;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+/* Style for chat messages */
+.user {
+  text-align: right;
+  background-color: #03045e;
+  color: #fff;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  clear: both;
+  float: right;
+  margin: 5px;
+  margin-bottom: 5px;
+  max-width: 70%;
+}
+
+.bot {
+  text-align: left;
+  background-color: #EFEFEF;
+  color: #333;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  clear: both;
+  margin-bottom: 5px;
+  margin: 5px;
+  max-width: 100%;
+}

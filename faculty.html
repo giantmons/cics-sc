@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>CICS-SC ONLINE</title>
+
+        <!--External CSS Link-->
+        <link rel="stylesheet" href="styleFaculty.css">
+        <link rel="stylesheet" href="styleBot.css">
+
+
+        <!--Favicon Link-->
+        <link rel="home icon"  href="nav_img/CICS.png">
+
+        <!--Font Awesome CDN Link-->
+        <script src="https://kit.fontawesome.com/c4583d5125.js" crossorigin="anonymous"></script>
+
+        <!--External JS-->
+        <script src="interactivity.js" defer></script>
+        <script src="scriptBot.js" defer></script>
+
+    </head>
+    <body>
+        <!------------------CHATBOT STARTS------------------->
+        <div id="chatbot">
+            <div id="chatbot-header" onclick="toggleChatbot()">
+              CICSmars
+            </div>
+            <div id="chatbot-container">
+              <div id="chatbot-messages"></div>
+              <input type="text" id="user-input" placeholder="Ask a question..." onkeydown="handleKeyDown(event)">
+              <button id="send-button" onclick="handleUserInput()">Send</button>
+            </div>
+        </div>      
+        <!------------------CHATBOT ENDS------------------->
+
+        <!----------------NAVIGATION STARTS------------------> 
+        <header class="header">
+            
+            <div id="menu-btn" class="fas fa-bars"></div>
+
+            <a data-aos="zoom-in-left" data-aos-delay="150" href="index.html" class="logo"><i class="fa-solid fa-pen-nib"></i>CICS-SC ONLINE</a>
+            
+            <nav class="navbar">
+                <a data-aos="zoom-in-left" data-aos-delay="300" href="index.html">HOME</a>
+                <a data-aos="zoom-in-left" data-aos-delay="450" href="about.html">ABOUT US</a>
+                <a data-aos="zoom-in-left" data-aos-delay="600" href="#sub-org">ORGANIZATIONS</a>
+                <a data-aos="zoom-in-left" data-aos-delay="750" href="FAQs.html">FAQs</a>
+            </nav>
+
+            <a data-aos="zoom-in-left" data-aos-delay="1300" href="login.html" class="btn">LOG IN</a>
+        
+        </header>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800,
+                offset:150,
+            });
+        </script>
+        <!----------------NAVIGATION ENDS------------------>
+
+        <!---------------FACULTY---------------->
+<div class="heading">
+    <span>The College of Informatics And Computing Sciences</span>
+    <h1>Faculty Members</h1>
+</div>
+
+<div class="small-container">
+    <div class="row">
+        <div class="col4">
+            <img src="facultyphoto/geral.JPG">
+            <h4>Gerald Daño</h4>
+            <p>IINTESS Organization Adviser</p>
+        </div>
+        <div class="col4">
+            <img src="facultyphoto/mau.JPG">
+            <h4>Maurice Oliver Dela Cruz</h4>
+            <p>JPCS Organization Adviser</p>
+        </div>
+        <div class="col4">
+            <img src="facultyphoto/shai.JPG">
+            <h4>Sharmaine Malaluan</h4>
+            <p>CICS Council Adviser</p>
+        </div>
+        <div class="col4">
+            <img src="facultyphoto/angelca.JPG">
+            <h4>Maria Angelica Sison-Laraya</h4>
+            <p>Faculty</p>
+        </div>
+    </div>
+</div>
+
+<div class="small-container">
+    <div class="row">
+        <div class="col4">
+            <img src="facultyphoto/arjo.JPG">
+            <h4>Arjonel Mendoza</h4>
+            <p>Faculty</p>
+        </div>
+        <div class="col4">
+            <img src="facultyphoto/fatima.JPG">
+            <h4>Fatima Marie Agdon</h4>
+            <p>Faculty</p>
+        </div>
+        <div class="col4">
+            <img src="facultyphoto/jel.JPG">
+            <h4>Jeleen Mangubat</h4>
+            <p>Faculty</p>
+        </div>
+        <div class="col4">
+            <img src="facultyphoto/kimaira.JPG">
+            <h4>Kim Aira Macatangay</h4>
+            <p>Faculty</p>
+        </div>
+    </div>
+</div>
+
+<div class="small-container">
+    <div class="row">
+        <div class="col4">
+            <img src="facultyphoto/jerom.JPG">
+            <h4>Jerome Fabregar</h4>
+             <p>Faculty</p>
+        </div>
+        <div class="col4">
+            <img src="facultyphoto/kim.JPG">
+            <h4>Kimberly Marasigan</h4>
+            <p>Faculty</p>
+        </div>
+        <div class="col4">
+            <img src="facultyphoto/eje.JPG">
+            <h4>Christine Joy Eje</h4>
+            <p>Faculty</p>
+        </div>
+        <div class="col4">
+            <img src="facultyphoto/ria.JPG">
+            <h4>Ria Castillo</h4>
+            <p>Faculty</p>
+        </div>
+    </div>
+</div>
+
+<!----------------FOOTER (SECTION 4) START------------------>
+<div class="credit">Terms of Use <span>| Privacy Policy</span> | CICS-SC</div>
+<!----------------FOOTER (SECTION 4) END------------------>

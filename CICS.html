@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>CICS</title>
+
+        <!--External CSS Link-->
+        <link rel="stylesheet" href="styleCics.css">
+        <link rel="stylesheet" href="styleBot.css">
+
+        <!--Favicon Link-->
+        <link rel="home icon"  href="nav_img/CICS.png">
+
+        <!--Font Awesome CDN Link-->
+        <script src="https://kit.fontawesome.com/c4583d5125.js" crossorigin="anonymous"></script>
+
+        <!--External JS-->
+        <script src="scriptBot.js" defer></script>
+        <script src="interactivitySub.js" defer></script>
+
+    </head>
+    <body>
+        <!----------------CHATBOT START---------------------->
+        <div id="chatbot">
+            <div id="chatbot-header" onclick="toggleChatbot()">
+              CICSmars
+            </div>
+            <div id="chatbot-container">
+              <div id="chatbot-messages"></div>
+              <input type="text" id="user-input" placeholder="Ask a question..." onkeydown="handleKeyDown(event)">
+              <button id="send-button" onclick="handleUserInput()">Send</button>
+            </div>
+        </div>      
+        <!----------------CHATBOT ENDS----------------------->
+
+        <!----------------NAVIGATION STARTS------------------> 
+        <header class="header">
+            
+            <div id="menu-btn" class="fas fa-bars"></div>
+
+            <a data-aos="zoom-in-left" data-aos-delay="150" href="index.html" class="logo"><i class="fa-solid fa-pen-nib"></i>CICS-SC ONLINE</a>
+            
+            <nav class="navbar">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="index.html">ORGANIZATIONS</a>
+                <a href="FAQs.html">FAQs</a>
+            </nav>
+
+            <a data-aos="zoom-in-left" data-aos-delay="1300" href="login.html" class="btn">LOG IN</a>
+        
+        </header>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800,
+                offset:150,
+            });
+        </script>
+        <!----------------NAVIGATION ENDS------------------>
+
+        
+        <!----------------HOME START------------------>
+
+        <div class="navig-link">
+            <p><a href="index.html">Home</a> > <a href="index.html">Organizations</a> > <a href="INTESS.html">CICS</a></p>
+        </div>
+
+        <div class="title">
+            <span data-aos="fade-up" data-aos-delay="150">CICS</span>
+            <p data-aos="fade-up" data-aos-delay="450">The College of Informatics and Computing Sciences</p>
+        </div>
+
+        <section class="home" id="home">
+
+            <div class="content">
+
+                <div class="image">
+                    <img src="nav_img/CICS.png">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!----------------HOME ENDS------------------>
+        
+        <!----------------RECENT ACTIVITIES START------------------>
+        <section class="about" id="about">
+
+       
+            <div class="left-content">
+
+                <span>Overview<br></span>
+                <h3>"Strive for greatness, EverUpward! ExcelCICSior!"</h3>
+
+                <div class="social">
+                    <a href="https://www.facebook.com/iintessorg" class="fab fa-facebook-f"></a>
+                    <a href="" class="fa fa-google"></a>
+                </div>
+            </div>
+
+            <div class="right-content">
+                <p><br>The College of Informatics and Computing Sciences Is An Organization Dedicated To All Students from Information Technology(IT) and Computer Science(CS) Of Batangas State University - Alangilan Campus.</p>
+                <p>To cultivate a dynamic and inclusive learning environment that fosters excellence in informatics and computing sciences. Our goal is to empower students with cutting-edge knowledge, critical thinking skills, and a passion for innovation. 
+                </p>
+            </div>
+
+        </section>        
+
+        <section class="photo-container">
+
+            <div>
+                <h7>Organization's Recent Events:</h7>
+            </div>
+
+            <div class="wrapper">
+
+                <!--CONTAINER 1-->
+                <div class="scene">
+                    <div class="card" id="oneCard">
+                      <div class="card__face card__face--front">
+                        <img src="subOrg_img/twoCICS.jpg">
+                      </div>
+                      <div class="card__face card__face--back">
+                        <div class="back-content">
+                            <h2>ExcelCICSior 2023: Froshie Onboarding and Student Assembly</h2>
+                            <p>September 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                 <!--CONTAINER 2-->
+                <div class="scene">
+                    <div class="card" id="twoCard">
+                      <div class="card__face card__face--front">
+                        <img src="subOrg_img/oneCICS.jpg">
+                      </div>
+                      <div class="card__face card__face--back">
+                        <div class="back-content">
+                            <h2>Take Off 2023: CICSians by the Seashore</h2>
+                            <p>August 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <!--CONTAINER 3-->
+                <div class="scene">
+                    <div class="card" id="threeCard">
+                      <div class="card__face card__face--front">
+                        <img src="subOrg_img/threeCICS.jpg">
+                      </div>
+                      <div class="card__face card__face--back">
+                        <div class="back-content">
+                            <h2>TECHNOFUS10N 2023: Across the Multiverse</h2>
+                            <p>May 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <!--CONTAINER 4-->
+                <div class="scene">
+                    <div class="card" id="fourCard">
+                      <div class="card__face card__face--front">
+                        <img src="subOrg_img/fourCICS.jpg">
+                      </div>
+                      <div class="card__face card__face--back">
+                        <div class="back-content">
+                            <h2>Cupid Cues</h2>
+                            <p>February 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+    
+            </div>
+            
+        </section>
+        <!--------------------------RECENT ACTIVITIES END-------------------------------->
+
+        <!---------------------------UPCOMING EVENTS START--------------------------------->
+        <section class="event-container">
+            <div class="event-title">Upcoming Events:</div>
+
+            <div class="year">
+                2023
+            </div>
+
+                <div class="event">
+                    <div class="left-container">
+                        <p>November</p>
+                    </div>
+                    <div class="right-container">
+                        <p>CyberFest</p>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="left-container">
+                        <p>November</p>
+                    </div>
+                    <div class="right-container">
+                        <p>CLOUD Connect: Embracing the Power of Cloud Technology</p>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="left-container">
+                        <p>December</p>
+                    </div>
+                    <div class="right-container">
+                        <p>DAGASAAN V.2</p>
+                    </div>
+                </div>
+
+            <div class="year">
+                2024
+            </div>
+
+            <div class="event">
+                <div class="left-container">
+                    <p>March</p>
+                </div>
+                <div class="right-container">
+                    <p>ARIBA</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-container">
+                    <p>April</p>
+                </div>
+                <div class="right-container">
+                    <p>Technofusion 2024: Spellbound Legacies</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-container">
+                    <p>May</p>
+                </div>
+                <div class="right-container">
+                    <p>TECHWISE</p>
+                </div>
+            </div>
+
+        </section>
+        <!---------------------------UPCOMING EVENTS START--------------------------------->
+
+       
+        <!----------------------ORG OFFICERS START-------------------------------->
+         <div class="heading">
+            <p>College of Informatics and Computing Sciences</p>
+            <h1>Organization Officers</h1>
+        </div>
+        
+        <div class="small-container">
+            <div class="row">
+                <div class="col4">
+                    <img src="subOrg_img/CICS_adviser.JPG">
+                    <h4>Sharmaine Malaluan</h4>
+                    <p>Organization Adviser</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/CICS_president.JPG">
+                    <h4>Len Aubrey Cantos</h4>
+                    <p>President</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/IINTESS_treasurer.JPG">
+                    <h4>Yeleina Lagajeno</h4>
+                    <p>External Vice President</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="small-container">
+            <div class="row">
+                <div class="col4">
+                    <img src="subOrg_img/IINTESS_president.JPG">
+                    <h4>Jhomari Ramirez</h4>
+                    <p>Internal Vice President</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/ACCESS_president.JPG">
+                    <h4>Hannah Rose Jose</h4>
+                    <p>Secretary</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/IINTESS_assTreasurer.JPG">
+                    <h4>Patricia Mangubat</h4>
+                    <p>Treasurer</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/ACCESS_assTreasurer.JPG">
+                    <h4>Jan Ella Villota</h4>
+                    <p>Assitant Treasurer</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="small-container">
+            <div class="row">
+                <div class="col4">
+                    <img src="subOrg_img/ACCESS_treasurer.JPG">
+                    <h4>Maria Daniela Velasco</h4>
+                    <p>Auditor</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/IINTESS_assSecretary.JPG">
+                    <h4>Aerolle Sana</h4>
+                    <p>Public Relation Officer I</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/ACCESS_secretary.JPG">
+                    <h4>Mark Wilhelm Marcos</h4>
+                    <p>Public Relation Officer II</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/IINTESS_secretary.JPG">
+                    <h4>Demmer Marvic Valeriano</h4>
+                    <p>Business Manager I</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/IINTESS_public2.JPG">
+                    <h4>Baron Miguel Niog</h4>
+                    <p>Business Manager II</p>
+                </div>
+            </div>
+        </div>
+         
+        <!----------------------ORG OFFICERS END---------------------------------->
+
+        <!-------------------------OTHER ORGS START------------------------------>
+        <section class="othr-org" id="othr-org">
+
+        <div class="heading">
+            <a>Navigate to other <span>CICS Organization: </span></a>
+        </div>
+
+        <div class="box-container">
+            <div class="box" data-aos="fade-up" data-aos-delay="">
+            
+                <a href="CICS.html">
+                    <div class="image">
+                        <img src="nav_img/CICS.png" alt="JPCS">
+                    </div>
+                </a>
+
+            </div> 
+
+            <div class="box" data-aos="fade-up" data-aos-delay="">
+            
+                <a href="JPCS.html">
+                    <div class="image">
+                        <img src="nav_img/JPCS.png" alt="JPCS">
+                    </div>
+                </a>
+
+            </div>  
+
+            <div class="box" data-aos="fade-up" data-aos-delay="">
+                
+                <a href="ACCESS.html">
+                    <div class="image">
+                        <img src="nav_img/ACCESS.png" alt="ACCESS">
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-delay="">
+            
+                <a href="INTESS.html">
+                    <div class="image">
+                        <img src="nav_img/IINTESS.png" alt="JPCS">
+                    </div>
+                </a>
+
+            </div>   
+        </div>
+        </section>
+        <!-----------------OTHER ORGS------------------> 
+
+        <!----------------FOOTER START------------------>
+        <section class="footer">
+
+            <div class="box-container">
+
+                <!--SOCMEDS-->
+                <div class="box" data-aos="fade-up" data-aos-delay="150">
+                    <a href="#" class="logo"> <i class="fa-solid fa-pen-nib"></i>CICS-SC</a>
+                    <p>Connect with us through the following social media platforms.</p>
+                    <div class="connect">
+                        <a href="" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+
+                <!--QUICK LINKS-->
+                <div class="box" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Quick Links</h3>
+                    <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i>Home</a>
+                    <a href="about.html" class="links"> <i class="fas fa-arrow-right"></i>About Us</a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Organizations</a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Our Team</a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Programs</a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>FAQs</a>
+                </div>
+                
+                <!--EMAIL-->
+                <div class="email-us" data-aos="fade-up" data-aos-delay="600">
+                    <h3>Do You Have Any Questions?</h3>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Enter Email Address" class="email" required>
+                        <input type="text" name="subject" placeholder="Enter Your Subject" class="email" required>
+                        <textarea rows="8" name="message" placeholder="messages" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+        
+            </div>
+        
+        </section>
+        
+        <div class="credit">Terms of Use <span>| Privacy Policy</span> | CICS-SC</div>
+        <!----------------FOOTER END------------------>
+
+    </body>
+</html>

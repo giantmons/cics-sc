@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>CICS-SC ONLINE</title>
+
+        <!--External CSS Link-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styleBot.css">
+
+        <!--Favicon Link-->
+        <link rel="home icon"  href="nav_img/CICS.png">
+
+        <!--Font Awesome CDN Link-->
+        <script src="https://kit.fontawesome.com/c4583d5125.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+        <!--External JS-->
+        <script src="interactivity.js" defer></script>
+        <script src="scriptBot.js" defer></script>
+
+    </head>
+    <body>
+
+        <!----------------CHATBOT START---------------------->
+        <div id="chatbot">
+            <div id="chatbot-header" onclick="toggleChatbot()">
+              CICSmars
+            </div>
+            <div id="chatbot-container">
+              <div id="chatbot-messages"></div>
+              <input type="text" id="user-input" placeholder="Ask a question..." onkeydown="handleKeyDown(event)">
+              <button id="send-button" onclick="handleUserInput()">Send</button>
+            </div>
+        </div>      
+        <!----------------CHATBOT ENDS----------------------->
+
+        <!----------------NAVIGATION STARTS------------------> 
+        <header class="header">
+            
+            <div id="menu-btn" class="fas fa-bars"></div>
+
+            <a data-aos="zoom-in-left" data-aos-delay="150" href="index.html" class="logo"><i class="fa-solid fa-pen-nib"></i>CICS-SC ONLINE</a>
+            
+            <nav class="navbar">
+                <a data-aos="zoom-in-left" data-aos-delay="300" href="index.html">HOME</a>
+                <a data-aos="zoom-in-left" data-aos-delay="450" href="about.html">ABOUT US</a>
+                <a data-aos="zoom-in-left" data-aos-delay="600" href="#sub-org">ORGANIZATIONS</a>
+                <a data-aos="zoom-in-left" data-aos-delay="750" href="FAQs.html">FAQs</a>
+            </nav>
+
+            <a data-aos="zoom-in-left" data-aos-delay="1300" href="login.html" class="btn">LOG IN</a>
+        
+        </header>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800,
+                offset:150,
+            });
+        </script>
+        <!----------------NAVIGATION ENDS------------------>
+
+        <!----------------HOME (SECTION 1) START------------------>
+        <section class="home" id="home">
+
+            <div class="content">
+                <span data-aos="fade-up" data-aos-delay="150">Ascending</span>
+                <h3 data-aos="fade-up" data-aos-delay="300">to Greater Heights</h3>
+                <p data-aos="fade-up" data-aos-delay="450">We Eye To Be The Best And Soar
+                    High Among The Rest. Be One With CICS.
+                </p>
+                <a data-aos="fade-up" data-aos-delay="600" href="academics.html" class="btnhome">Academics</a>
+                <a data-aos="fade-up" data-aos-delay="600" href="faculty.html" class="btnhome">Faculty</a>
+            </div>
+
+        </section>
+        <!----------------HOME (SECTION 1) ENDS------------------>
+    
+        <!----------------ABOUT (SECTION 2) START------------------>
+        <section class="about" id="about">
+
+            <div class="video-container" data-aos="fade-right" data-aos-delay="300">
+                <video src="vid_about/2.mp4" muted autoplay loop class="video"></video>
+                <div class="controls">
+                    <span class="control-btn" data-src="vid_about/3.mp4"></span>
+                    <span class="control-btn" data-src="vid_about/4.mp4"></span>
+                    <span class="control-btn" data-src="vid_about/1.mp4"></span>
+                </div>
+            </div>
+
+            <div class="content" data-aos="fade-left" data-aos-delay="600">
+                <span>About Us</span>
+                <h3>CICS-SC is here to serve you</h3>
+                <p>Igniting the fire within our soul takes passion, 
+                    courage, and commitment. We experienced 
+                    challenges in life that mold us to be here and we 
+                    are sharpened by yesterday to be tough amidst different 
+                    battles awaiting us tomorrow.
+                </p>
+                <a href="CICS.html" class="btn">read more</a>
+            </div>
+
+        </section>
+         <!----------------ABOUT (SECTION 2) ENDS------------------>
+
+         <!----------------SUB-ORGS (SECTION 3) START------------------>
+        <section class="sub-org" id="sub-org">
+
+            <div class="heading">
+                <span>The College of Informatics And Computing Sciences</span>
+                <h1>Organizations Within</h1>
+            </div>
+
+            <div class="box-container">
+                <!--CONTAINER 1-->
+                <div class="box" data-aos="fade-up" data-aos-delay="">
+                    
+                    <div class="image">
+                        <img src="subOrg_img/IINTESS CVV.jpg" alt="IINTESS">
+                    </div>
+                    
+                    <div class="content">
+                        <h3>IINTESS</h3>
+                        <P>The Integrated Information Technology Student's Society
+                            is an organization dedicated to all BSIT students of
+                            Batangas State University - Alangilan Campus.
+                        </P>
+                        <a href="INTESS.html" >read more <i class="fas fa-angle-right"></i></a>
+                    </div>
+
+                </div>
+
+                <!--CONTAINER 2-->
+                <div class="box" data-aos="fade-up" data-aos-delay="">
+                    
+                    <div class="image">
+                        <img src="subOrg_img/JPCS CVV.png" alt="SPARKS">
+                    </div>
+                    
+                    <div class="content">
+                        <h3>JPCS</h3>
+                        <P>Junior Philippine Computer Society - BatState-U Alangilan Chapter
+                            is an organization dedicated to all CICS students of
+                            Batangas State University - Alangilan Campus.
+                        </P>
+                        <a href="JPCS.html" >read more <i class="fas fa-angle-right"></i></a>
+                    </div>
+
+                </div>
+
+                <!--CONTAINER 3-->
+                <div class="box" data-aos="fade-up" data-aos-delay="">
+                    
+                    <div class="image">
+                        <img src="subOrg_img/ACCESS CVV.png" alt="ACCESS">
+                    </div>
+                    
+                    <div class="content">
+                        <h3>ACCESS</h3>
+                        <P>Association Of Committed Computer Science Students
+                            is an organization dedicated to all BSCS students of
+                            Batangas State University - Alangilan Campus.
+                        </P>
+                        <a href="ACCESS.html" >read more <i class="fas fa-angle-right"></i></a>
+                    </div>
+
+                </div>
+
+                <!--CONTAINER 4-->
+                <div class="box" data-aos="fade-up" data-aos-delay="">
+                    
+                    <div class="image">
+                        <img src="subOrg_img/SPARKS CVV.jpg" alt="SPARKS">
+                    </div>
+                    
+                    <div class="content">
+                        <h3>SPARKS</h3>
+                        <P>Skills, Passion, Art, Recreation, and Knowledge Society
+                            pursuit to honing CICS students' multifaceted excellence.
+                        </P>
+                        <a href="#" >read more <i class="fas fa-angle-right"></i></a>
+                    </div>
+
+                </div>   
+
+            </div>
+        </section>
+         <!----------------SUB-ORGS (SECTION 3) ENDS------------------>      
+        
+        <!----------------FOOTER (SECTION 4) START------------------>
+        <section class="footer">
+            
+            <div class="box-container">
+                <!--SOCMEDS-->
+                <div class="box" data-aos="fade-up" data-aos-delay="150">
+                    <a href="#" class="logo"> <i class="fa-solid fa-pen-nib"></i>CICS-SC</a>
+                    <p>Connect with us through the following social media platforms.</p>
+                    <div class="connect">
+                        <a href="" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+
+                <!--QUICK LINKS-->
+                <div class="box" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Quick Links</h3>
+                    <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i>Home</a>
+                    <a href="about.html" class="links"> <i class="fas fa-arrow-right"></i>About Us</a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Organizations</a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Our Team</a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Programs</a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>FAQs</a>
+            
+                </div>
+                
+                <!--EMAIL-->
+                <div class="email-us" data-aos="fade-up" data-aos-delay="600">
+                    <h3>Do You Have Any Questions?</h3>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Enter Email Address" class="email" required>
+                        <input type="text" name="subject" placeholder="Enter Your Subject" class="email" required>
+                        <textarea rows="8" name="message" placeholder="messages" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+        
+            </div>
+        
+        </section>
+        
+        <div class="credit">Terms of Use <span>| Privacy Policy</span> | CICS-SC</div>
+        <!----------------FOOTER (SECTION 4) END------------------>
+    
+    </body>
+</html>

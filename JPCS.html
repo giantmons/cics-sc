@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>JPCS</title>
+
+        <!--External CSS Link-->
+        <link rel="stylesheet" href="styleJpcs.css">
+        <link rel="stylesheet" href="styleBot.css">
+
+        <!--Favicon Link-->
+        <link rel="home icon"  href="nav_img/CICS.png">
+
+        <!--Font Awesome CDN Link-->
+        <script src="https://kit.fontawesome.com/c4583d5125.js" crossorigin="anonymous"></script>
+
+        <!--External JS-->
+        <script src="scriptBot.js" defer></script>
+        <script src="interactivitySub.js" defer></script>
+
+    </head>
+    <body>
+        <!----------------CHATBOT START---------------------->
+        <div id="chatbot">
+            <div id="chatbot-header" onclick="toggleChatbot()">
+              CICSmars
+            </div>
+            <div id="chatbot-container">
+              <div id="chatbot-messages"></div>
+              <input type="text" id="user-input" placeholder="Ask a question..." onkeydown="handleKeyDown(event)">
+              <button id="send-button" onclick="handleUserInput()">Send</button>
+            </div>
+        </div>      
+        <!----------------CHATBOT ENDS----------------------->
+
+        <!----------------NAVIGATION STARTS------------------> 
+        <header class="header">   
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <a data-aos="zoom-in-left" data-aos-delay="150" href="index.html" class="logo"><i class="fa-solid fa-pen-nib"></i>CICS-SC ONLINE</a>
+            
+            <nav class="navbar">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="#">ORGANIZATIONS</a>
+                <a href="FAQs.html">FAQs</a>
+            </nav>
+
+            <a data-aos="zoom-in-left" data-aos-delay="1300" href="#" class="btn">LOG IN</a>
+        </header>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800,
+                offset:150,
+            });
+        </script>
+        <!----------------------NAVIGATION ENDS----------------------------->
+
+        
+        <!---------------------------HOME START----------------------------->
+
+        <div class="navig-link">
+            <p><a href="index.html">Home</a> > <a href="#">Organizations</a> > <a href="JPCS.html">JPCS</a></p>
+        </div>
+
+        <div class="title">
+            <span data-aos="fade-up" data-aos-delay="150">JPCS</span>
+            <p data-aos="fade-up" data-aos-delay="450">Junior Philippine Computer Society</p>
+        </div>
+
+        <section class="home" id="home">
+
+            <div class="content">
+
+                <div class="image">
+                    <img src="nav_img/JPCS.png">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-----------------------------HOME ENDS------------------------------->
+        
+        <!---------------------------ABOUT START------------------------------>
+        <section class="about" id="about">
+            <div class="left-content">
+                <span>Overview<br></span>
+                <h3>"Empowering Young Minds, Forging Future Innovators"</h3>
+
+                <div class="social">
+                    <a href="https://www.facebook.com/iintessorg" class="fab fa-facebook-f"></a>
+                    <a href="" class="fa fa-google"></a>
+                </div>
+            </div>
+
+            <div class="right-content">
+                <p><br>Junior Philippine Computer Society - BatState-U Alangilan Chapter Is An Organization Dedicated 
+                    To All CICS Students Of Batangas State University - Alangilan Campus.</p>
+                <p>To inspire, educate, and empower the next generation of tech enthusiasts by
+                    providing a supportive platform within the Junior Computer Society, 
+                   where young minds can cultivate their <br>passion for technology, foster innovation, and 
+                   develop the skills necessary to become the future leaders and innovators in the world of computing and beyond.
+                </p>
+                <p><b>Fueling young minds with the power of technology to shape a brighter, more innovative future.<br></b></p>
+            </div>
+        </section>
+        <!---------------------------ABOUT ENDS------------------------------>        
+
+        <!---------------------------RECENT ACTIVITIES START------------------------------>
+        <section class="photo-container">
+
+            <div>
+                <p>Organization's Recent Events:</p>
+            </div>
+            
+            <div class="wrapper">
+
+                <!--CONTAINER 1-->
+                <div class="scene">
+                    <div class="card" id="oneCard">
+                      <div class="card__face card__face--front">
+                        <img src="subOrg_img/jpcsevent.jpg">
+                      </div>
+                      <div class="card__face card__face--back">
+                        <div class="back-content">
+                            <h2>JPCS Explore IT: PRISM</h2>
+                            <p>April 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <!--CONTAINER 2-->
+                <div class="scene">
+                    <div class="card" id="twoCard">
+                      <div class="card__face card__face--front">
+                        <img src="subOrg_img/twoJpcs.jpg">
+                      </div>
+                      <div class="card__face card__face--back">
+                        <div class="back-content">
+                            <h2>Jewel Quest | ExeclCICSor Bejeweled</h2>
+                            <p>December 2022</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <!--CONTAINER 3-->
+                <div class="scene">
+                    <div class="card" id="threeCard">
+                      <div class="card__face card__face--front">
+                        <img src="subOrg_img/threeJpcs.jpg">
+                      </div>
+                      <div class="card__face card__face--back">
+                        <div class="back-content">
+                            <h2>TRUST TALK-AN</h2>
+                            <p>December 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <!--CONTAINER 4-->
+                <div class="scene">
+                    <div class="card" id="fourCard">
+                      <div class="card__face card__face--front">
+                        <img src="subOrg_img/fourJpcs.jpg">
+                      </div>
+                      <div class="card__face card__face--back">
+                        <div class="back-content">
+                            <h2>Path Finder: Toolkit for a Winning Career in the Technology Field</h2>
+                            <p>October 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+
+        <!---------------------------RECENT ACTIVIES ENDS------------------------------>
+
+
+        <!---------------------------UPCOMING EVENT START------------------------------>
+        <section class="event-container">
+            <div class="event-title">Upcoming Events:</div>
+
+            <div class="year">
+                2023
+            </div>
+
+                <div class="event">
+                    <div class="left-container">
+                        <p>November</p>
+                    </div>
+                    <div class="right-container">
+                        <p>PREDICT: Accelerating Techological Breakthroughs</p>
+                    </div>
+                </div>
+
+            <div class="year">
+                2024
+            </div>
+
+            <div class="event">
+                <div class="left-container">
+                    <p>February</p>
+                </div>
+                <div class="right-container">
+                    <p>TECH TODAY Exhibit</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-container">
+                    <p>March</p>
+                </div>
+                <div class="right-container">
+                    <p>Honed Innovations for a Sustainable Tomorrow (HINT)</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-container">
+                    <p>April</p>
+                </div>
+                <div class="right-container">
+                    <p>POWER - Propelling our World Towards Sustainable Development Goals with Technology</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-container">
+                    <p>April</p>
+                </div>
+                <div class="right-container">
+                    <p>Olympians</p>
+                </div>
+            </div>
+        </section>
+
+         <!--------------------UPCOMING EVENT START------------------------->
+       
+         <!----------------------ORG OFFICERS START-------------------------------->
+         <div class="heading">
+            <p>Junior Philippine Computer Society</p>
+            <h1>Organization Officers</h1>
+        </div>
+        
+        <div class="small-container">
+            <div class="row">
+                <div class="col4">
+                    <img src="subOrg_img/JPCS_adviser.JPG">
+                    <h4>Maurice Dela Cruz</h4>
+                    <p>Adviser</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/JPCS_president.JPG">
+                    <h4>Jan Ella Villota</h4>
+                    <p>President</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/ACCESS_president.JPG">
+                    <h4>Hannah Rose Jose</h4>
+                    <p>Vice President</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="small-container">
+            <div class="row">
+                <div class="col4">
+                    <img src="subOrg_img/JPCS_secretary.JPG">
+                    <h4>Art Cedrick Platon</h4>
+                    <p>Secretary</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/JPCS_treasurer.JPG">
+                    <h4>Maria Daniela Velasco</h4>
+                    <p>Treasurer</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/JPCS_auditor.JPG">
+                    <h4>Lance Daniel Crisang</h4>
+                    <p>Auditor</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="small-container">
+            <div class="row">
+                <div class="col4">
+                    <img src="subOrg_img/JPCS_memb.JPG">
+                    <h4>Jhomari Ramirez</h4>
+                    <p>Director for Membership</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/JPCS_studDev.JPG">
+                    <h4>J-A Hispano</h4>
+                    <p>Director for Student Development</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/JPCS_pubRex.JPG">
+                    <h4>Jansen Cruzat</h4>
+                    <p>Director for Public Relation</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/JPCS_market.JPG">
+                    <h4>Billymer Salamy</h4>
+                    <p>Director for Marketing and Publication</p>
+                </div>
+            </div>
+        </div>
+         <!----------------------ORG OFFICERS END---------------------------------->
+
+         <!----------------OTHER ORGS START------------------>
+         <section class="othr-org" id="othr-org">
+
+            <div class="heading">
+                <a>Navigate to other <span>CICS Organization: </span></a>
+            </div>
+
+            <div class="box-container">
+                <div class="box" data-aos="fade-up" data-aos-delay="">
+                    <a href="CICS.html">
+                        <div class="image">
+                            <img src="nav_img/CICS.png" alt="JPCS">
+                        </div>
+                    </a>
+                </div> 
+
+                <div class="box" data-aos="fade-up" data-aos-delay="">
+                    <a href="JPCS.html">
+                        <div class="image">
+                            <img src="nav_img/JPCS.png" alt="JPCS">
+                        </div>
+                    </a>
+                </div>  
+
+                <div class="box" data-aos="fade-up" data-aos-delay="">   
+                    <a href="ACCESS.html">
+                        <div class="image">
+                            <img src="nav_img/ACCESS.png" alt="ACCESS">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="box" data-aos="fade-up" data-aos-delay="">
+                    <a href="INTESS.html">
+                        <div class="image">
+                            <img src="nav_img/IINTESS.png" alt="JPCS">
+                        </div>
+                    </a>
+                </div>   
+            </div>
+        </section>
+         <!-----------------OTHER ORGS------------------> 
+
+        <!----------------FOOTER START------------------>
+        <section class="footer">
+
+            <div class="box-container">
+
+                <!--SOCMEDS-->
+                <div class="box" data-aos="fade-up" data-aos-delay="150">
+                    <a href="#" class="logo"> <i class="fa-solid fa-pen-nib"></i>CICS-SC</a>
+                    <p>Connect with us through the following social media platforms.</p>
+                    <div class="connect">
+                        <a href="https://web.facebook.com/CICSStudentCouncil" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+
+                <!--QUICK LINKS-->
+                <div class="box" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Quick Links</h3>
+                    <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i>Home</a>
+                    <a href="about.html" class="links"> <i class="fas fa-arrow-right"></i>About Us</a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Organizations</a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Our Team</a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Programs</a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>FAQs</a>
+                </div>
+                
+                <!--EMAIL-->
+                <div class="email-us" data-aos="fade-up" data-aos-delay="600">
+                    <h3>Do You Have Any Questions?</h3>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Enter Email Address" class="email" required>
+                        <input type="text" name="subject" placeholder="Enter Your Subject" class="email" required>
+                        <textarea rows="8" name="message" placeholder="messages" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+        
+            </div>
+        
+        </section>
+        
+        <div class="credit">Terms of Use <span>| Privacy Policy</span> | CICS-SC</div>
+        <!----------------FOOTER END------------------>
+
+    </body>
+</html>

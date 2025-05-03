@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Academics</title>
+
+    <!--External CSS Link-->
+    <link rel="stylesheet" href="styleAcademics.css">
+    <link rel="stylesheet" href="styleBot.css">
+
+    <!--Favicon Link-->
+    <link rel="home icon"  href="nav_img/CICS.png">
+
+    <!--Font Awesome CDN Link-->
+    <script src="https://kit.fontawesome.com/c4583d5125.js" crossorigin="anonymous"></script>
+
+    <!--External JS-->
+    <script src="scriptBot.js" defer></script>
+    <script src="jsFaqs.js" defer></script>
+
+</head>
+<body>
+    <!----------------CHATBOT START---------------------->
+    <div id="chatbot">
+        <div id="chatbot-header" onclick="toggleChatbot()">
+            CICSmars
+        </div>
+        <div id="chatbot-container">
+            <div id="chatbot-messages"></div>
+            <input type="text" id="user-input" placeholder="Ask a question..." onkeydown="handleKeyDown(event)">
+            <button id="send-button" onclick="handleUserInput()">Send</button>
+        </div>
+    </div>      
+    <!----------------CHATBOT ENDS----------------------->
+    
+    <!----------------NAVIGATION STARTS------------------> 
+    <header class="header">
+            
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a data-aos="zoom-in-left" data-aos-delay="150" href="index.html" class="logo"><i class="fa-solid fa-pen-nib"></i>CICS-SC ONLINE</a>
+        
+        <nav class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="index.html">ORGANIZATIONS</a>
+            <a href="FAQs.html">FAQs</a>
+        </nav>
+
+        <a data-aos="zoom-in-left" data-aos-delay="1300" href="login.html" class="btn">LOG IN</a>
+    
+    </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset:150,
+        });
+    </script>
+    <!----------------NAVIGATION ENDS------------------>
+
+    <!-----------------------ACADEMIC PROGRAMS START----------------------------->
+    <div class="title">
+        <p>The College of Informatics and Computing Sciences</p>
+        <h1>Academic Programs</h1>
+    </div>
+
+    <div class="container">
+
+        <p>Undergraduate Programs :</p>
+
+        <!--CONTAINER 1-->
+        <div class="wrapper">
+            <button class="toggle">
+                Bachelor of Science in Information Technology
+                <i class="fas fa-plus icon"></i>
+            </button>
+            <div class="content">
+                <h7>The Bachelor of Science in Information Technology (BSIT) is a multidisciplinary undergraduate degree program designed to provide 
+                    students with a comprehensive education in the diverse and dynamic field of information technology. This program integrates 
+                    theoretical knowledge with practical skills, preparing students to meet the challenges of the rapidly evolving technological landscape.<br><br>
+                </h7>
+                <h7>Enrollment Status:</h7>  
+                <div class="enrollment-table">
+                    <table>
+                        <tr class="table-head">
+                            <th>Program</th>
+                            <th>2nd Semester, AY 2021-2022</th>
+                            <th>Midterm Class, AY 2021-2022</th>
+                            <th>1st Semester, AY 2022-2023</th>
+                        </tr>
+                        <tr>
+                            <th>BS Information Technology</th>
+                            <th>1,511</th>
+                            <th>362</th>
+                            <th>1,459</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--CONTAINER 2-->
+        <div class="wrapper">
+            <button class="toggle">
+                Bachelor of Science in Computer Science
+                <i class="fas fa-plus icon"></i>
+            </button>
+            <div class="content">
+                <h7>The Bachelor of Science in Computer Science (BSCS) is an undergraduate degree program designed to provide students with a 
+                    comprehensive and in-depth understanding of the theoretical and practical aspects of computer science. This program equips students 
+                    with the knowledge and skills necessary to address complex computational problems, develop innovative software solutions, and contribute to advancements in technology.<br><br>
+                </h7>
+                <h7>Enrollment Status:</h7>  
+                <div class="enrollment-table">
+                    <table>
+                        <tr class="table-head">
+                            <th>Program</th>
+                            <th>2nd Semester, AY 2021-2022</th>
+                            <th>Midterm Class, AY 2021-2022</th>
+                            <th>1st Semester, AY 2022-2023</th>
+                        </tr>
+                        <tr>
+                            <th>BS Computer Science</th>
+                            <th>248</th>
+                            <th>122</th>
+                            <th>318</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="gradText"><p>Graduate Programs :</p></div>
+
+        <!--CONTAINER 3-->
+        <div class="wrapper">
+            <button class="toggle">
+                Master in Information Technology
+                <i class="fas fa-plus icon"></i>
+            </button>
+            <div class="content">
+                <h7>The Master of Information Technology (MIT) is a graduate-level program designed to provide students with advanced 
+                    knowledge, skills, and expertise in the diverse and rapidly evolving field of information technology. The program 
+                    typically combines theoretical understanding with practical applications, preparing students for leadership roles
+                    in the IT industry.<br><br>
+                </h7>
+                <h7>Enrollment Status: </h7>  
+                <div class="enrollment-table">
+                    <table>
+                        <tr class="table-head">
+                            <th>Program</th>
+                            <th>2nd Semester, AY 2021-2022</th>
+                            <th>Midterm Class, AY 2021-2022</th>
+                            <th>1st Semester, AY 2022-2023</th>
+                        </tr>
+                        <tr>
+                            <th>Master in Information Technology</th>
+                            <th>16</th>
+                            <th>16</th>
+                            <th>27</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--CONTAINER 4-->
+        <div class="wrapper">
+            <button class="toggle">
+                Master of Science in Information Technology
+                <i class="fas fa-plus icon"></i>
+            </button>
+            <div class="content">
+                <h7>
+                    The Master of Science in Information Technology (MSIT) is an advanced graduate program designed to provide students 
+                    with a deep and specialized understanding of information technology, preparing them for leadership roles and advanced 
+                    positions within the IT industry. The MSIT program typically combines advanced coursework with research components,
+                    allowing students to delve into specific areas of interest and contribute to the advancement of knowledge in the field.<br><br>
+                </h7>
+                <h7>Enrollment Status: </h7>  
+                <div class="enrollment-table">
+                    <table>
+                        <tr class="table-head">
+                            <th>Program</th>
+                            <th>2nd Semester, AY 2021-2022</th>
+                            <th>Midterm Class, AY 2021-2022</th>
+                            <th>1st Semester, AY 2022-2023</th>
+                        </tr>
+                        <tr>
+                            <th>MS Information Technology</th>
+                            <th>15</th>
+                            <th>4</th>
+                            <th>11</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--CONTAINER 5-->
+        <div class="wrapper">
+            <button class="toggle">
+                Master of Science in Computer Science
+                <i class="fas fa-plus icon"></i>
+            </button>
+            <div class="content">
+                <h7>The Master of Science in Computer Science (MSCS) is an advanced graduate program designed to provide students with a 
+                    comprehensive and specialized understanding of computer science. This program goes beyond the foundational knowledge 
+                    gained in undergraduate studies and often includes advanced coursework, research opportunities, and a thesis or project component.<br><br>
+                </h7>
+                <h7>Enrollment Status: </h7>  
+                <div class="enrollment-table">
+                    <table>
+                        <tr class="table-head">
+                            <th>Program</th>
+                            <th>2nd Semester, AY 2021-2022</th>
+                            <th>Midterm Class, AY 2021-2022</th>
+                            <th>1st Semester, AY 2022-2023</th>
+                        </tr>
+                        <tr>
+                            <th>MS Computer Science</th>
+                            <th>13</th>
+                            <th>3</th>
+                            <th>7</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--CONTAINER 6-->
+        <div class="wrapper">
+            <button class="toggle">
+                Master of Science in Data Science
+                <i class="fas fa-plus icon"></i>
+            </button>
+            <div class="content">
+                <h7>
+                    The Master of Science in Data Science (MSDS) is an advanced graduate program designed to equip students with the skills
+                    and knowledge necessary to navigate the complex and rapidly evolving field of data science. This program integrates 
+                    statistical, mathematical, and computational techniques to extract valuable insights from large and complex datasets.<br><br>
+                </h7>
+                <h7>Enrollment Status: </h7>  
+                <div class="enrollment-table">
+                    <table>
+                        <tr class="table-head">
+                            <th>Program</th>
+                            <th>2nd Semester, AY 2021-2022</th>
+                            <th>Midterm Class, AY 2021-2022</th>
+                            <th>1st Semester, AY 2022-2023</th>
+                        </tr>
+                        <tr>
+                            <th>MS Data Science</th>
+                            <th>7</th>
+                            <th>4</th>
+                            <th>12</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!----------------FOOTER START------------------>
+    <div class="credit">Terms of Use <span>| Privacy Policy</span> | CICS-SC</div>
+    <!----------------FOOTER END------------------>
+
+</body>
+</html>

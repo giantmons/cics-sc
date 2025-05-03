@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>ACCESS</title>
+
+        <!--External CSS Link-->
+        <link rel="stylesheet" href="styleAccess.css">
+        <link rel="stylesheet" href="styleBot.css">
+
+        <!--Favicon Link-->
+        <link rel="home icon"  href="nav_img/CICS.png">
+
+        <!--Font Awesome CDN Link-->
+        <script src="https://kit.fontawesome.com/c4583d5125.js" crossorigin="anonymous"></script>
+       
+        <!--External JS-->
+        <script src="scriptBot.js" defer></script>
+        <script src="interactivitySub.js" defer></script>
+
+
+    </head>
+    <body>
+        <!----------------CHATBOT START---------------------->
+        <div id="chatbot">
+            <div id="chatbot-header" onclick="toggleChatbot()">
+              CICSmars
+            </div>
+            <div id="chatbot-container">
+              <div id="chatbot-messages"></div>
+              <input type="text" id="user-input" placeholder="Ask a question..." onkeydown="handleKeyDown(event)">
+              <button id="send-button" onclick="handleUserInput()">Send</button>
+            </div>
+        </div>      
+        <!----------------CHATBOT ENDS----------------------->
+
+        <!----------------NAVIGATION STARTS------------------> 
+        <header class="header">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <a data-aos="zoom-in-left" data-aos-delay="150" href="index.html" class="logo"><i class="fa-solid fa-pen-nib"></i>CICS-SC ONLINE</a>
+            
+            <nav class="navbar">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="#">ORGANIZATIONS</a>
+                <a href="FAQs.html">FAQs</a>
+            </nav>
+
+            <a data-aos="zoom-in-left" data-aos-delay="1300" href="#" class="btn">LOG IN</a>
+        </header>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800,
+                offset:150,
+            });
+        </script>
+        <!----------------NAVIGATION ENDS------------------>
+
+        
+        <!----------------HOME START------------------>
+
+        <div class="navig-link">
+            <p><a href="index.html">Home</a> > <a href="#">Organizations</a> > <a href="ACCESS.html">ACCESS</a></p>
+        </div>
+
+        <div class="title">
+            <span data-aos="fade-up" data-aos-delay="150">ACCESS</span>
+            <p data-aos="fade-up" data-aos-delay="450"> Association of Commited Computer Science Students</p>
+        </div>
+
+        <section class="home" id="home">
+            <div class="content">
+                <div class="image">
+                    <img src="nav_img/ACCESS.png">
+                </div>
+            </div>
+        </section>
+
+        <!----------------HOME ENDS------------------>
+        
+        <!----------------ABOUT START------------------>
+        <section class="about" id="about">
+            <div class="left-content">
+                <span>Overview<br></span>
+                <h3>"Achieving Competence through Continuous Efficient Student Service"</h3>
+
+                <div class="social">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fa fa-google"></a>
+                </div>
+            </div>
+
+            <div class="right-content">
+                <p><br>The Association Of Committed Computer Science Students
+                    is an organization dedicated to all BSCS students of
+                    Batangas State University - Alangilan Campus.</p>
+                <p>Enriching students with essential tools for personal and professional development. 
+                    They provide direction, focus, and motivation, helping individuals 
+                    and organizations work towards desired outcomes.</p>
+                <p><b>Empowering Minds, Shaping Tomorrow.<br></b></p>
+            </div>
+        </section>   
+        <!----------------ABOUT END------------------>     
+
+        <!-------------RECENT ACTIVITIES START--------------->
+        <section class="photo-container">
+            <div>
+                <h7>Organization's Recent Events:</h7>
+            </div>
+            <div class="wrapper">
+
+                <!--CONTAINER 1-->
+                <div class="scene">
+                    <div class="card" id="oneCard">
+                      <div class="card__face card__face--front">
+                        <img src="subOrg_img/accesseventtwo.jpg">
+                      </div>
+                      <div class="card__face card__face--back">
+                        <div class="back-content">
+                            <h2>ACCESS Valentine 2023: <br>Love CService</h2>
+                            <p>February 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <!--CONTAINER 2-->
+                <div class="scene">
+                    <div class="card" id="twoCard">
+                      <div class="card__face card__face--front">
+                        <img src="subOrg_img/threeAccess.jpg">
+                      </div>
+                      <div class="card__face card__face--back">
+                        <div class="back-content">
+                            <h2>Hayon Kabata - <br>Scholarship Program</h2>
+                            <p>February 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <!--CONTAINER 3-->
+                <div class="scene">
+                    <div class="card" id="threeCard">
+                      <div class="card__face card__face--front">
+                        <img src="subOrg_img/oneAccess.jpg">
+                      </div>
+                      <div class="card__face card__face--back">
+                        <div class="back-content">
+                            <h2>Friendship Feud | <br>ExcelCICSor Bejeweled</h2>
+                            <p>December 2022</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <!--CONTAINER 4-->
+                <div class="scene">
+                    <div class="card" id="fourCard">
+                      <div class="card__face card__face--front">
+                        <img src="subOrg_img/accessevent.png">
+                      </div>
+                      <div class="card__face card__face--back">
+                        <div class="back-content">
+                            <h2>GetACCESSorized - <br>Second Wave</h2>
+                            <p>February 2022</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+        <!--------------RECENT ACTIVITIES ENDS-------------------->
+
+        <!------------------UPCOMING EVENTS START---------------------->
+        <section class="event-container">
+            <div class="event-title">Upcoming Events:</div>
+
+            <div class="year">
+                2023
+            </div>
+
+                <div class="event">
+                    <div class="left-container">
+                        <p>November</p>
+                    </div>
+                    <div class="right-container">
+                        <p>Hack-cess Mania</p>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="left-container">
+                        <p>November</p>
+                    </div>
+                    <div class="right-container">
+                        <p>Pista ng ACCESS</p>
+                    </div>
+                </div>
+
+            <div class="year">
+                2024
+            </div>
+
+            <div class="event">
+                <div class="left-container">
+                    <p>February</p>
+                </div>
+                <div class="right-container">
+                    <p>My Heart's Canvas: Long live, all the magic we made</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-container">
+                    <p>March</p>
+                </div>
+                <div class="right-container">
+                    <p>ILOVEYOU: Know you Status</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-container">
+                    <p>March</p>
+                </div>
+                <div class="right-container">
+                    <p>DoNation</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-container">
+                    <p>March</p>
+                </div>
+                <div class="right-container">
+                    <p>The Why's of Life</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-container">
+                    <p>April</p>
+                </div>
+                <div class="right-container">
+                    <p>Tourney</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-container">
+                    <p>April</p>
+                </div>
+                <div class="right-container">
+                    <p>Cicruit Canvas: Reinventing E-Waste into Tech Artistry</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-container">
+                    <p>May</p>
+                </div>
+                <div class="right-container">
+                    <p>ACCESS to all</p>
+                </div>
+            </div>
+
+        </section>
+        <!------------------UPCOMING EVENTS START---------------------->
+
+       
+        <!------------------ORG OFFICERS START------------------->
+         <div class="heading">
+            <p>Association of Committed Computer Science Students</p>
+            <h1>Organization Officers</h1>
+        </div>
+        
+        <div class="small-container">
+            <div class="row">
+                <div class="col4">
+                    <img src="subOrg_img/ACCESS_adviser.JPG">
+                    <h4>Joseph Balmes</h4>
+                    <p>Adviser</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/ACCESS_president.JPG">
+                    <h4>Hannah Rose Jose</h4>
+                    <p>President</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/ACCESS_externalVice.JPG">
+                    <h4>Leanne Cassandra Rosales</h4>
+                    <p>External Vice President</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="small-container">
+            <div class="row">
+                <div class="col4">
+                    <img src="subOrg_img/ACCESS_internalVice.JPG">
+                    <h4>Victor Manuel Dalisay</h4>
+                    <p>Internal Vice President</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/ACCESS_secretary.JPG">
+                    <h4>Mark Wilhelm Marcos</h4>
+                    <p>Secretary</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/ACCESS_treasurer.JPG">
+                    <h4>Maria Daniela Velasco</h4>
+                    <p>Treasurer</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/ACCESS_assTreasurer.JPG">
+                    <h4>Jan Ella Villota</h4>
+                    <p>Assistant Treasurer</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="small-container">
+            <div class="row">
+                <div class="col4">
+                    <img src="subOrg_img/ACCESS_auditor.JPG">
+                    <h4>Iemerie Jom Villota</h4>
+                    <p>Auditor</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/ACCESS_pub1.JPG">
+                    <h4>Aldrich Ryan Antony</h4>
+                    <p>Public Relation Officer I</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/ACCESS_pub2.JPG">
+                    <h4>Dominic Miko Valdez</h4>
+                    <p>Public Relatoin Officer II</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/ACCESS_buss1.JPG">
+                    <h4>Aeron Evangelista</h4>
+                    <p>Business Manager I</p>
+                </div>
+                <div class="col4">
+                    <img src="subOrg_img/ACCESS_buss2.JPG">
+                    <h4>Tristan Cuartero</h4>
+                    <p>Business Manager II</p>
+                </div>
+            </div>
+        </div>
+         <!----------------------ORG OFFICERS END---------------------------------->
+
+         <!----------------OTHER ORGS START------------------>
+         <section class="othr-org" id="othr-org">
+
+            <div class="heading">
+                <a>Navigate to other <span>CICS Organization: </span></a>
+            </div>
+
+            <div class="box-container">
+                <div class="box" data-aos="fade-up" data-aos-delay="">
+                    <a href="CICS.html">
+                        <div class="image">
+                            <img src="nav_img/CICS.png" alt="JPCS">
+                        </div>
+                    </a>
+                </div> 
+
+                <div class="box" data-aos="fade-up" data-aos-delay="">
+                    <a href="JPCS.html">
+                        <div class="image">
+                            <img src="nav_img/JPCS.png" alt="JPCS">
+                        </div>
+                    </a>
+                </div>  
+
+                <div class="box" data-aos="fade-up" data-aos-delay="">   
+                    <a href="ACCESS.html">
+                        <div class="image">
+                            <img src="nav_img/ACCESS.png" alt="ACCESS">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="box" data-aos="fade-up" data-aos-delay="">
+                    <a href="INTESS.html">
+                        <div class="image">
+                            <img src="nav_img/IINTESS.png" alt="JPCS">
+                        </div>
+                    </a>
+                </div>   
+            </div>
+        </section>
+         <!-----------------OTHER ORGS------------------> 
+
+        <!----------------FOOTER START------------------>
+        <section class="footer">
+
+            <div class="box-container">
+
+                <!--SOCMEDS-->
+                <div class="box" data-aos="fade-up" data-aos-delay="150">
+                    <a href="#" class="logo"> <i class="fa-solid fa-pen-nib"></i>CICS-SC</a>
+                    <p>Connect with us through the following social media platforms.</p>
+                    <div class="connect">
+                        <a href="" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+
+                <!--QUICK LINKS-->
+                <div class="box" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Quick Links</h3>
+                    <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i>Home</a>
+                    <a href="about.html" class="links"> <i class="fas fa-arrow-right"></i>About Us</a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Organizations</a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Our Team</a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Programs</a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>FAQs</a>
+                </div>
+                
+                <!--EMAIL-->
+                <div class="email-us" data-aos="fade-up" data-aos-delay="600">
+                    <h3>Do You Have Any Questions?</h3>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Enter Email Address" class="email" required>
+                        <input type="text" name="subject" placeholder="Enter Your Subject" class="email" required>
+                        <textarea rows="8" name="message" placeholder="messages" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+        
+            </div>
+        
+        </section>
+        
+        <div class="credit">Terms of Use <span>| Privacy Policy</span> | CICS-SC</div>
+        <!----------------FOOTER END------------------>
+
+    </body>
+</html>

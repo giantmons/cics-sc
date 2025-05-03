@@ -1,0 +1,160 @@
+ <!----------------SUB-ORGS (SECTION 4) START------------------>   
+        <section class="sub-org" id="sub-org">
+            
+            <div class="box-container">
+                <!--CONTAINER 1-->
+                <div class="box" data-aos="fade-up" data-aos-delay="">
+                    
+                    <div class="image">
+                        <img src="subOrg_img/BITS_BYTES.jpg" alt="BITS_BYTES">
+                    </div>
+                    
+                    <div class="content">
+                        <h3>BITS & BYTES</h3>
+                        <P>Bits and Bytes is the official student publication of 
+                            the College of Informatics and Computing Sciences.
+                        </P>
+                        <a href="#" >read more <i class="fas fa-angle-right"></i></a>
+                    </div>
+                
+                </div>
+
+                <!--CONTAINER 2-->
+                <div class="box" data-aos="fade-up" data-aos-delay="">
+                    
+                    <div class="image">
+                        <img src="subOrg_img/SPARKS CVV.jpg" alt="SPARKS">
+                    </div>
+                    
+                    <div class="content">
+                        <h3>SPARKS</h3>
+                        <P>Skills, Passion, Art, Recreation, and Knowledge Society
+                            pursuit to honing CICS students' multifaceted excellence.
+                        </P>
+                        <a href="#" >read more <i class="fas fa-angle-right"></i></a>
+                    </div>
+
+                </div>
+
+                <!--CONTAINER 3-->
+                <div class="box" data-aos="fade-up" data-aos-delay="">
+                    
+                    <div class="image">
+                        <img src="subOrg_img/CHROMA CVV.jpg" alt="CHROMA">
+                    </div>
+                    
+                    <div class="content">
+                        <h3>CHROMA</h3>
+                        <P>The official organization of multimedia student artists 
+                            under the College of Informatics 
+                            and Computing Sciences.The group consists of 
+                            students who are multimedia artists.
+                        </P>
+                        <a href="#" >read more <i class="fas fa-angle-right"></i></a>
+                    </div>
+
+                </div>                
+
+            </div>
+        </section>
+         <!----------------SUB-ORGS (SECTION 4) END------------------>   
+
+         <!----------------SUB-ORGS (SECTION 5) START------------------>   
+        <section class="sub-org" id="sub-org">
+           
+           <div class="box-container">
+               <!--CONTAINER 1-->
+               <div class="box" data-aos="fade-up" data-aos-delay="">
+                   
+                   <div class="image">
+                       <img src="subOrg_img/DANCE CVV.jpg" alt="DANCE">
+                   </div>
+                   
+                   <div class="content">
+                       <h3>DANCE COMPANY</h3>
+                       <P>The CICS Dance Company is the official organization for the 
+                            students who are into dancing that are enrolled in the 
+                            College of Informatics and Computing Sciences.
+                       </P>
+                       <a href="#" >read more <i class="fas fa-angle-right"></i></a>
+                   </div>
+               
+               </div>
+
+               <!--CONTAINER 2-->
+               <div class="box" data-aos="fade-up" data-aos-delay="">
+                   
+                   <div class="image">
+                       <img src="" alt="CAST">
+                   </div>
+                   
+                   <div class="content">
+                       <h3>CAST</h3>
+                       <P>Community Of Actors And Stage Talents
+                       </P>
+                       <a href="#" >read more <i class="fas fa-angle-right"></i></a>
+                   </div>
+
+               </div>
+
+               <!--CONTAINER 3-->
+               <div class="box" data-aos="fade-up" data-aos-delay="">
+                   
+                   <div class="image">
+                       <img src="subOrg_img/GUILD CVV.jpg" alt="GILD">
+                   </div>
+                   
+                   <div class="content">
+                       <h3>CULTURAL GUILD SINGERS</h3>
+                       <P>The CICS Cultural Guild Singers is the official 
+                            organization of the college for the instrumentalists 
+                            and singers enrolled.
+                       </P>
+                       <a href="#" >read more <i class="fas fa-angle-right"></i></a>
+                   </div>
+
+               </div>                
+
+           </div>
+        </section>
+        <!----------------SUB-ORGS (SECTION 5) END------------------> 
+
+        <!----------------SUB-ORGS (SECTION 6) START------------------>   
+        <section class="sub-org" id="sub-org">
+       
+            <div class="box-container">
+                <!--CONTAINER 1-->
+                <div class="box" data-aos="fade-up" data-aos-delay="">
+               
+                    <div class="image">
+                        <img src="" alt="SCRIPT">
+                    </div>
+               
+                <div class="content">
+                   <h3>SCRIPT</h3>
+                   <P>Student Coders For Resourceful And Innovative
+                        Progaramming Techniques.
+                   </P>
+                   <a href="#" >read more <i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+
+           <!--CONTAINER 2-->
+            <div class="box" data-aos="fade-up" data-aos-delay="">
+               
+                <div class="image">
+                   <img src="" alt="CHAMPS">
+                </div>
+               
+                <div class="content">
+                   <h3>CHAMPS</h3>
+                   <P>Community For Honoring Athletic Mastery
+                        And Performance In Sports.
+                   </P>
+                   <a href="#" >read more <i class="fas fa-angle-right"></i></a>
+                </div>
+
+            </div>
+
+        </section>
+        <!----------------SUB-ORGS (SECTION 6) END------------------>

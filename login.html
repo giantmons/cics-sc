@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Font Awesome CDN Link-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/c4583d5125.js" crossorigin="anonymous"></script>
+    
+    <!--External CSS Link-->
+    <link rel="stylesheet" href="styleLogin.css">
+    
+    <!--Favicon Link-->
+    <link rel="home icon"  href="nav_img/CICS.png">
+
+    <!--External JS-->
+    <script src="interactivity.js" defer></script>
+    
+    <title>Welcome CICSmars</title>
+</head>
+<body>
+    <!----------------NAVIGATION STARTS------------------> 
+    <header class="header">
+            
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a data-aos="zoom-in-left" data-aos-delay="150" href="index.html" class="logo"><i class="fa-solid fa-pen-nib"></i>CICS-SC ONLINE</a>
+        
+        <nav class="navbar">
+            <a data-aos="zoom-in-left" data-aos-delay="300" href="index.html">HOME</a>
+            <a data-aos="zoom-in-left" data-aos-delay="450" href="about.html">ABOUT US</a>
+            <a data-aos="zoom-in-left" data-aos-delay="600" href="#">ORGANIZATIONS</a>
+            <a data-aos="zoom-in-left" data-aos-delay="750" href="FAQs.html">FAQs</a>
+        </nav>
+
+        <a data-aos="zoom-in-left" data-aos-delay="1300" href="#" class="btn3">LOG IN</a>
+    
+    </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset:150,
+        });
+    </script>
+    <!----------------NAVIGATION ENDS------------------>
+
+    <div class="container">
+        <div class="signin-signup">
+            <!--STUDENT LOGIN START-->
+            <form action="" class="sign-in-form">
+                <h2 class="title">Student</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+                <input type="submit" value="Login" class="btn1">
+                <div class="social-media">
+                </div>
+                <p class="account-text">Are you an admin? <a href="#" id="sign-up-btn2">Admin Login</a></p>
+            </form>
+            <!--STUDENT LOGIN ENDS-->
+
+            <!--ADMIN LOGIN START-->
+            <form action="" class="sign-up-form">
+                <h2 class="title">Admin</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+                <input type="submit" value="Login" class="btn1">
+                <p class="account-text">Are you perhaps a student? <a href="#" id="sign-in-btn2">Student Login</a></p>
+            </form>
+            <!--ADMIN LOGIN ENDS-->
+        </div>
+
+        <!--NAVIGATIONAL PANELS-->
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>CICS ONLINE</h3>
+                    <p>If you are a CICS Student,
+                        This is your portal to stay connected 
+                        with the vibrant CICS community. 
+                        Click the button below to Login.
+                    </p>
+                    <button class="btn" id="sign-in-btn">Student</button>
+                </div>
+                <img src="login images/undraw_social_girl_re_kdrx.svg" alt="" class="image">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>CICS ONLINE</h3>
+                    <p>If you are an Administrator, 
+                        this is your secure gateway to manage and oversee the 
+                        CICS Student Council's digital presence. 
+                        Click the button below to Login.
+                    </p>
+                    <button class="btn" id="sign-up-btn">Admin</button>
+                </div>
+                <img src="login images//undraw_engineering_team_a7n2.svg" alt="CICS LOGO" class="image">
+            </div>
+        </div>
+    </div>
+    <script src="jsLogin.js"></script>
+</body>
+</html>

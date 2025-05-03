@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>About Us</title>
+
+    <!--External CSS Link-->
+    <link rel="stylesheet" href="styleAbout.css">
+    <link rel="stylesheet" href="styleBot.css">
+
+    <!--Favicon Link-->
+    <link rel="home icon"  href="nav_img/CICS.png">
+
+    <!--Font Awesome CDN Link-->
+    <script src="https://kit.fontawesome.com/c4583d5125.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+    <!--External JS-->
+    <script src="interactivity.js" defer></script>
+    <script src="jsAbout.js" defer></script>
+    <script src="scriptBot.js" defer></script>
+</head>
+<body>
+           <!----------------CHATBOT START---------------------->
+           <div id="chatbot">
+            <div id="chatbot-header" onclick="toggleChatbot()">
+              CICSmars
+            </div>
+            <div id="chatbot-container">
+              <div id="chatbot-messages"></div>
+              <input type="text" id="user-input" placeholder="Ask a question..." onkeydown="handleKeyDown(event)">
+              <button id="send-button" onclick="handleUserInput()">Send</button>
+            </div>
+        </div>      
+        <!----------------CHATBOT ENDS----------------------->
+
+        <!----------------NAVIGATION STARTS------------------> 
+        <header class="header">
+            
+            <div id="menu-btn" class="fas fa-bars"></div>
+
+            <a data-aos="zoom-in-left" data-aos-delay="150" href="index.html" class="logo"><i class="fa-solid fa-pen-nib"></i>CICS-SC ONLINE</a>
+            
+            <nav class="navbar">
+                <a data-aos="zoom-in-left" data-aos-delay="300" href="index.html">HOME</a>
+                <a data-aos="zoom-in-left" data-aos-delay="450" href="#">ABOUT US</a>
+                <a data-aos="zoom-in-left" data-aos-delay="600" href="#sub-org">ORGANIZATIONS</a>
+                <a data-aos="zoom-in-left" data-aos-delay="750" href="FAQs.html">FAQs</a>
+            </nav>
+
+            <a data-aos="zoom-in-left" data-aos-delay="1300" href="login.html" class="btn">LOG IN</a>
+        
+        </header>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800,
+                offset:150,
+            });
+        </script>
+        <!----------------NAVIGATION ENDS------------------>
+        
+        <!----------------------HOME STARTS---------------------->
+
+        <div class="navig-link">
+            <p><a href="index.html">Home</a> > <a href="#">About Us</a></p>
+        </div>
+
+        <section class="home">
+
+            <div class="heading">
+                <h1>ABOUT US</h1>
+                <span>The <b>College of Informatics and Computing Sciences</b> Is An Organization 
+                    Dedicated To All Students from <b>Information Technology</b> and <b>Computer 
+                    Science</b> Of Batangas State University - Alangilan Campus<br><br>
+
+                    Committed to advancing knowledge and fostering innovation at the intersection 
+                    of information technology and computing sciences. Our overarching goal
+                    is to cultivate an academic environment that empowers students, faculty,
+                    and researchers.<br><br>
+                </span>
+                <a href="CICS.html" class="btn">read more</a>
+            </div>
+
+            <div class="slider">
+                <div class="list">
+                    <div class="item">
+                        <img src="bgPhoto/excelcicsior.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="bgPhoto/p1.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="bgPhoto/p2.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="bgPhoto/p3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="bgPhoto/p4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="prev"><</button>
+                    <button id="next">></button>
+                </div>
+                <ul class="dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+        </section>
+        
+        <!----------------------HOME ENDS---------------------->
+
+        <!--------------------VALUES STARTS----------------------->
+        <section class="values">
+
+            <section class="tagline">
+                <div class="text">
+                    <p>Empowering Future Through</p>
+                    <h7>Informatics Excellence</h7>
+                    <h8><br>Guided by these core values, we strive to cultivate a dynamic learning environment that fosters technological expertise, ethical leadership, and a collaborative spirit, preparing our students to excel in the ever-evolving landscape of informatics and computing.</h8>
+                </div>
+            </section>
+
+            <div class="container">
+
+                <div class="content">
+                    <i class="fa-solid fa-glasses"></i>
+                    <h7><br>OUR VISION</h7>
+                    <p>"To inspire leaders and innovators in computer sciences and technology, 
+                    shaping a technologically advanced and socially responsible world."</p>
+                </div>
+
+                <div class="content">
+                    <i class="fa-solid fa-bullseye"></i>
+                    <h7><br>OUR MISSION</h7>
+                    <p>"To providing cutting-edge education, fostering innovation, and nurturing 
+                    ethical leaders who contribute meaningfully to the global technological landscape."</p>
+                </div>
+
+                <div class="content">
+                    <i class="fa-regular fa-square-check"></i>
+                    <h7><br>OUR GOALS</h7>
+                    <p>"Upholding Excellence, Integrity, Innovation, Collaboration, Diversity and 
+                    Inclusion, Community Engagement, and Lifelong Learning among its Students."</p>
+                </div>
+
+            </div>
+        </section>
+        <!--------------------VALUES ENDS----------------------->
+
+
+
+        <!--------------------TESTIMONIALS STARTS----------------------->
+        <section class="testimonials">   
+
+            <div class="title">
+                <span>Organization Testimonials</span>
+                <h1>Stories from Within</h1>
+            </div>
+
+            <div class="container">
+                
+                <div class="box-container">
+                    <i class="icon fa-solid fa-quote-left"></i>
+                    <p><i><br>I am incredibly grateful for the transformative experience I've had at the College of 
+                        Informatics and Computing Sciences. The hands-on approach to learning, the state-of-the-art 
+                        facilities, and the support from dedicated faculty have prepared me not only academically but 
+                        also professionally.</i>
+                    </p>
+                    <h4><br><br>Jhon Chrisbert Alejaga</h4>
+                    <p>Student of CICS</p>
+                </div>
+
+                <div class="box-container">
+                    <i class="icon fa-solid fa-quote-left"></i>
+                    <p><i><br>After working in the industry for years, CICS offered me a flexible and tailored program that aligned perfectly 
+                        with my career goals. The practical insights from industry-experienced professors and the focus 
+                        on emerging technologies allowed me to upskill and stay ahead in a rapidly changing tech landscape.</i>
+                    </p>
+                    <h4><br><br>Jose Leandro Luna</h4>
+                    <p>Alumni of CICS</p>
+                </div>
+
+                <div class="box-container">
+                    <i class="icon fa-solid fa-quote-left"></i>
+                    <p><i><br>CICS for me has been transformative. The hands-on learning, 
+                        supportive faculty, and collaborative community have prepared me for the tech industry. The practical education 
+                        and innovative atmosphere here have given me the skills and confidence for a successful future in computing sciences.</i>
+                    </p>
+                    <h4><br><br>Rhea Anne Gonzales</h4>
+                    <p>Student of CICS</p>
+                </div>
+
+                <div class="box-container">
+                    <i class="icon fa-solid fa-quote-left"></i>
+                    <p><i><br>Working at CICS has been incredibly rewarding. The 
+                        institution's commitment to academic excellence creates a dynamic environment for both 
+                        faculty and students. The collaborative culture and the emphasis on 
+                        practical skills ensures our students are well-prepared for success in the field of informatics.</i>
+                    </p>
+                    <h4><br><br>Darlene Burgos Opeña</h4>
+                    <p>Faculty Member</p>
+                </div>
+
+            </div>
+        </section>
+        <!--------------------TESTIMONIAL ENDS----------------------->
+
+        <!----------------FOOTER START------------------>
+
+        <div class="credit">Terms of Use <span>| Privacy Policy</span> | CICS-SC</div>
+        <!----------------FOOTER END------------------>
+</body>
+</html>
+
+
+

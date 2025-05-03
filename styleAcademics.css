@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+/*SCROLL BAR*/
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+  
+  html::-webkit-scrollbar-track {
+    background: #ffff;
+}
+  
+  html::-webkit-scrollbar-thumb {
+    background: #03045e;
+    border-radius: 5rem;
+}
+
+/*HTML BODY*/
+body {
+    background: #ededed;
+    overflow-x: hidden;
+}
+
+/*HTML SECTION*/
+section {
+    padding: 3rem 9%;
+}
+
+
+/*NAVIGATION BAR*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #ffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    box-shadow: rgb(0, 0, 0);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1.5rem 9%;
+}
+  
+.header .navbar a {
+    font-size: 1.7rem;
+    color: #a2a2a2;
+    display: inline-block;
+    margin: 0 1rem;
+}
+  
+header .navbar a:before{
+    content: '';
+    position: absolute;
+    background: #03045e;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+  
+header .navbar a:hover:before{
+    width: 100%;
+}
+  
+.header .btn {
+    margin-top: 0;
+}
+  
+.logo {
+    font-size: 3rem;
+    color: #03045e;
+    font-weight: 900;
+    font-family: 'Poppins' sans-serif;
+}
+  
+#menu-btn {
+    font-size: 2.5rem;
+    color: #03045e;
+    cursor: pointer;
+    display: none;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #03045e;
+    border: 0.2rem solid #03045e;
+    border-radius: 5rem;
+    cursor: pointer;
+    background: none;
+}
+  
+.btn:hover {
+    background: #03045e;
+    color: #ffff;
+}
+  
+.btn1 {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #ffff;
+    border: 0.2rem solid #ffff;
+    border-radius: 5rem;
+    cursor: pointer;
+    background: none;
+}
+    
+.btn1:hover {
+    background: #ffff;
+    color: #03045e;
+}
+
+/* ACADEMIC PROGRAMS */
+
+.title {
+    margin: 15rem auto;
+    text-align: center;
+    font-size: 2.25rem;
+}
+
+.title h1 {
+    color: #03045e;
+}
+  
+.container{
+    margin: -7rem auto 10rem;
+    width: 80%;
+}
+  
+.container p {
+   margin-bottom: 3rem;
+   font-size: 1.75rem;
+}
+
+.container .gradText p {
+    margin-bottom: 3rem;
+    margin-top: 7rem;
+    font-size: 1.75rem;
+ }
+
+.wrapper{
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 15px 40px;
+    border-radius: 1.5rem;
+    box-shadow: 0 15px 25px rgba(0,0,50,0.2);
+}
+
+.toggle{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #111130;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 0;
+}
+
+.content{
+    margin: 0 auto;
+    font-size: 1.5rem;
+    line-height: 30px;
+    height: 0;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.enrollment-table table {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.enrollment-table {
+    overflow-x:auto
+}
+
+.enrollment-table table, tr, th {
+    text-align: center;
+    padding: 1rem;
+    font-weight: normal;
+}
+
+.enrollment-table th {
+    border: 1px solid #ededed;
+}
+
+.enrollment-table .table-head {
+    background-color: #03045e;
+    color: #ffffff;
+}
+
+/*FOOTER*/
+.credit {
+    background: #ffff;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem 1rem;
+    color: #a2a2a2;
+  }
+  
+  .credit span {
+    color: #03045e;
+  }
+  
+  
+/* RESPONSIVENESS */
+
+@media (max-width: 991px) {
+    html {
+      font-size: 55%;
+    }
+    .header {
+      padding: 1.5rem 2rem;
+    }
+    section {
+      padding: 3rem 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #menu-btn {
+      display: inline-block;
+    }
+    .header .navbar {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background: #ffff;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+              clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar.active {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header .navbar a {
+      margin: 2rem;
+      font-size: 2rem;
+      display: block;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+  }
